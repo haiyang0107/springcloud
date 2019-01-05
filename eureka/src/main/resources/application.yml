@@ -6,6 +6,11 @@ server:
         context-path: ~
     tomcat:
         uri-encoding: UTF-8
+
+
+spring:
+    application:
+      name: eureka-serverclient
 # 服务注册
 eureka:
     # 实例设置
