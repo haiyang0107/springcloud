@@ -1,0 +1,22 @@
+server:
+  port: 8092
+  #应用名称
+spring:
+  application:
+    name: feign-consumer
+
+#eureka  注册中心地址
+# 服务注册
+eureka:
+
+  # 实例设置
+  instance:
+    # 实例主机名称
+    hostname: 127.0.0.1
+    # 实例是否允许使用IP
+    preferIpAddress: false
+
+  # 客户端设置
+  client:
+    # 注册中心地址（集群时指定另外一个注册中心地址）
+    serviceUrl.defaultZone: http://${eureka.instance.hostname}:8091/eureka/
