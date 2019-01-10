@@ -16,6 +16,8 @@
         <module>../eureka</module>
         <module>../feign</module>
         <module>../modules/baseapi</module>
+        <module>../modules/springbootServiceOne</module>
+
     </modules>
 
 </project>

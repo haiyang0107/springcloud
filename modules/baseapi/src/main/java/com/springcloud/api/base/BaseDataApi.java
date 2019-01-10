@@ -1,5 +1,6 @@
 package com.springcloud.api.base;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -8,4 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(value = "/api/base/baseInfo")
 public interface BaseDataApi {
 
+    @GetMapping(value= "testData")
+    public String testData(String ss);
 }
