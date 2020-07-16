@@ -1,8 +1,12 @@
-user:
-  home: E:/myworkspace/springcloud/Hoxton
 spring:
   cloud:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/haiyang0107/doc.git
+          timeout: 5
+          #待后期添加测试GitHub地址
+          username: 源码登录的用户名
+          password: 源码登录的密码
+          search-paths: config-repo
+      label: master
