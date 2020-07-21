@@ -21,7 +21,7 @@
     <modules>
         <module>cloud-eureka</module>
         <module>cloud-config</module>
-        <module>cloud-gateway</module>
+        <module>cloud-gateway-zuul</module>
     </modules>
     <dependencies>
         <dependency>
