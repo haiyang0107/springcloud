@@ -1,0 +1,13 @@
+server:
+  port: 8092
+
+spring:
+  profiles:
+    active: native
+  application:
+    name: cloud-config
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared

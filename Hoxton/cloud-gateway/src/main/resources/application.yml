@@ -1,0 +1,17 @@
+server:
+  port: 8093
+spring:
+  profiles:
+    active: gateway-dev
+  application:
+    name: gateway-server
+  cloud:
+    gateway:
+      routes:
+        id: url-proxy-1
+        uri: localhost:8091
+        predicates: /csdn
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8091/eureka

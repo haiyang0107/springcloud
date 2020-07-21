@@ -3,28 +3,27 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.1.RELEASE</version>
+        <groupId>com.springcloud</groupId>
+        <artifactId>Hoxton</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.springcloud</groupId>
-    <artifactId>eureka</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>eureka</name>
-    <description>Demo project for Spring Boot</description>
 
-    <properties>
-        <java.version>1.8</java.version>
-        <spring-cloud.version>Hoxton.SR6</spring-cloud.version>
-    </properties>
+    <groupId>com.springcloud</groupId>
+    <artifactId>cloud-eureka</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>cloud-eureka</name>
+    <description>Demo project for Spring Boot</description>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

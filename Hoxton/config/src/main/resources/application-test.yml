@@ -1,8 +1,0 @@
-user:
-  home: E:/myworkspace/springcloud/Hoxton
-spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri:
