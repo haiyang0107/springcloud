@@ -4,6 +4,10 @@ server:
 spring:
   profiles:
     active: native
+  security:
+    user:
+      name: user
+      password: 123456
   application:
     name: cloud-config
   cloud:
@@ -11,6 +15,7 @@ spring:
       server:
         native:
           search-locations: classpath:/shared
+
 
 management:
   endpoint:

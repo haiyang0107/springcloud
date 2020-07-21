@@ -2,11 +2,8 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
-    eureka-server-connect-timeout-seconds: 500
   instance:
     prefer-ip-address: true #采用IP注册
-    instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
-
 logging:
   level:
     org.springframework.security: INFO

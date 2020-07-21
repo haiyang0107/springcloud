@@ -7,6 +7,9 @@ spring:
     config:
       uri: http://localhost:8092
       fail-fast: true
+      password: 123456
+      username: user
+
 eureka:
   instance:
     prefer-ip-address: true
