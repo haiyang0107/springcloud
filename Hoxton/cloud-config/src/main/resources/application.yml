@@ -11,3 +11,8 @@ spring:
       server:
         native:
           search-locations: classpath:/shared
+
+management:
+  endpoint:
+    refresh:
+      enabled: true

@@ -13,4 +13,5 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-    eureka-server-read-timeout-seconds: 0
+    server:
+      waitTimeInMsWhenSyncEmpty: 0
