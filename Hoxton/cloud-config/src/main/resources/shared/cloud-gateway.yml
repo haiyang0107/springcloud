@@ -1,0 +1,14 @@
+server:
+  port: 8093
+zuul:
+  routes:
+    cloud-server1:
+      path: /server/**
+      serviceId: cloud-server1
+      stripPrefix: false
+      sensitiveHeaders:  "*"
+  ignore-local-service: true
+  ignored-services: "*"
+  host:
+    connect-timeout-millis: 100000
+    socket-timeout-millis: 100000
